@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS and JavaScript Example</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0; color: #333; margin: 0; padding: 0;">
+
+    <!-- Header -->
+    <header style="background-color: #4CAF50; color: white; text-align: center; padding: 1em;">
+        <h1>Welcome to My Tutorial Page</h1>
+        <p style="margin: 0;">Learn HTML, CSS, and JavaScript</p>
+    </header>
+
+    <!-- Main Content -->
+    <div style="padding: 2em; text-align: center;">
+        <h2>Interactive Button</h2>
+        <p>Click the button below to change its color:</p>
+
+        <!-- Button with onclick JavaScript Event -->
+        <button onclick="changeColor()" style="padding: 10px 20px; font-size: 16px; background-color: #008CBA; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Click Me!
+        </button>
+
+        <!-- Text Section -->
+        <div style="margin-top: 2em;">
+            <h2>About This Page</h2>
+            <p>This is a simple example page to demonstrate how to use HTML with inline CSS and JavaScript. Inline styling makes it easy to control individual elements, while JavaScript lets you add interactivity.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript Function -->
+    <script>
+        function changeColor() {
+            // Get the button element
+            const button = document.querySelector("button");
+
+            // Toggle color between blue and green
+            if (button.style.backgroundColor === "rgb(0, 140, 186)") {
+                button.style.backgroundColor = "#4CAF50"; // Green
+            } else {
+                button.style.backgroundColor = "#008CBA"; // Blue
+            }
+        }
+    </script>
+
+</body>
+</html>
